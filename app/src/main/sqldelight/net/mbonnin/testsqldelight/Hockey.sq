@@ -4,3 +4,6 @@ CREATE TABLE hockeyPlayerDb (
   position TEXT AS HockeyPlayer.Position
 );
 
+
+selectAll:
+SELECT * FROM hockeyPlayerDb;
