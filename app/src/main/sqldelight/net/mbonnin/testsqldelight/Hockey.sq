@@ -1,0 +1,6 @@
+import net.mbonnin.testsqldelight.HockeyPlayer;
+
+CREATE TABLE hockeyPlayerDb (
+  position TEXT AS HockeyPlayer.Position
+);
+
