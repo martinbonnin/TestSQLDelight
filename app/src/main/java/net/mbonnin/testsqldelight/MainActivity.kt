@@ -22,10 +22,8 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        db.hockeyQueries.selectAll().addListener(object: Query.Listener {
-            override fun queryResultsChanged() {
-                Log.d("DB", "query changed")
-            }
-        })
+        val list = db.hockeyQueries.selectAll().executeAsList()
+
+        Log.d("SQLDelight", "list.size=${list.size}")
     }
 }

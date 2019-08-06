@@ -27,6 +27,13 @@ android {
     }
 }
 
+sqldelight {
+    Database {
+        packageName = "net.mbonnin.testsqldelight"
+        schemaOutputDirectory = file("src/main/sqldelight/databases")
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

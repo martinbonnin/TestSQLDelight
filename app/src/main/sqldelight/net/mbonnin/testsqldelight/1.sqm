@@ -1,14 +1,5 @@
 import net.mbonnin.testsqldelight.HockeyPlayer;
 
-CREATE TABLE hockeyPlayerDb (
-  position TEXT AS HockeyPlayer.Position
-);
-
-
 CREATE TABLE hockeyPlayerDb2 (
   position TEXT AS HockeyPlayer.Position
 );
-
-
-selectAll:
-SELECT * FROM hockeyPlayerDb;
